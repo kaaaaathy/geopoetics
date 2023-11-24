@@ -1,0 +1,10 @@
+{
+	"title": "geopoetics",
+	"about" : "geopoetics",
+	"menu" : {
+		"✻ Geopoetics ✻" : "info.html",
+		"Syllabus" : "syllabus.html",
+		"Projects" : "projects.html",
+		"Topics" : "topics.html"
+		}
+}
