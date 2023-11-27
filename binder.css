@@ -9,6 +9,7 @@
   width:20px;
   background-image: url('icon-w.png');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #binder{
