@@ -99,9 +99,12 @@ Write a short poem or piece of prose alongside this, one for each. Write also ab
 		project:"+",
     name:"Map Poetry",
 		content:`Inspired by Damian Zucconi, Meiko Shiomi, Queering the Map, and other projects, can you take an existing map and tracing paper and create a new concrete poem derived from it? 
-    <br>
-    Next, try do make yet another map but with your own counter-cartography: what annotations and/or renamings and/or erasures might you intervene with?`
-	},
+    <br><br>
+    First, you might trace + write only the text as it is. Think: What is missing from the original map? What could be named something else? What should not be represented on this map?
+ <br><br>Next, take 1-2 of the names, and using a computer or phone, research the background of that place. Could use Native-Land.ca, or something else. What is it called now, what did it used to be called? When did that change? Have there been any efforts to rename? Take some notes
+Write a short poem about your findings.<br><br>
+Finally, using a second sheet of tracing paper on the original map, rewrite the original text and with your own text. Erase, delete, modify, or respell to create your counter-cartographic poem.`
+      },
 	{
 		shown:false,
     date:"",
