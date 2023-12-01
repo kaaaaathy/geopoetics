@@ -3,7 +3,7 @@ export default
   shown:false,
   date:"",
   project:"+",
-  name:"Geosomatic Scores",
+  name:"Geo-scores",
   content:`
   (In class)
   <br>
@@ -31,7 +31,7 @@ Listen:
     project:"+",
     name:"Fossil Frottage",
     content:`
-    Frottage (fr: rubbing) exercise: Do graphite/charcoal rubbings of a series object which will survive us. Do between 5-10, and think about why this particular series of objects. Are they united by place, by memory, are they human-made, organic? Do they exist on vastly different or similar timescales? If you would like to explore color, or other methods of leaving a mark or trace, you are welcome to stray from the graphite/charcoal.
+    Frottage exercise: Do graphite/charcoal rubbings of a series object which will survive us. Do between 5-10, and think about why this particular series of objects. Are they united by place, by memory, are they human-made, organic? Do they exist on vastly different or similar timescales? If you would like to explore color, or other methods of leaving a mark or trace, you are welcome to stray from the graphite/charcoal.
 <br><br>
 Write a short poem or piece of prose alongside this, one for each. Write also about a collective or individual memory. Can you integrate text into the fossilized object as well?
     `
@@ -74,7 +74,7 @@ Write a short poem or piece of prose alongside this, one for each. Write also ab
     <br>
     Think about transformation at a broader scale. Think of a few possible things thing you want to do this week which would help people get what they deserve / their needs met. Think of one way that you could help do that for yourself. Do those things. Won’t ask you to turn this in. But do write about what a sustainable practice of transformation looks like, about 1-2 paragraphs.
     <br><br>
-    <b>For both assignments: Write down a list of as many relevant verbs as you can think of in 10 minutes.</b>
+    For both assignments: Write down a list of as many relevant verbs as you can think of in 10 minutes. (See: Richard Serra Verb List)
      
     `
 
@@ -107,7 +107,7 @@ Write a short poem or piece of prose alongside this, one for each. Write also ab
     date:"",
 		project:"+",
     name:"Final Project Proposal",
-		content:`Turn in a 2-page plan with 5+ references, 5+ images, and 2+ reading quotes for our final project. What geologic artwork/intervention/meditation will you create for the final? Will you modify an existing Prompt or redo a previous prompt? Will you use your research to inform this work? What will you show at the final class?`
+		content:`Turn in a 2-page plan with 5+ references, 5+ images, and 2+ reading quotes for our final project. What geologic artwork or intervention or meditation will you create for the final? Will you modify an existing prompt or redo a previous prompt? Will you use your research to inform this work? What will you show at the final class?`
 	},
 
 ]
