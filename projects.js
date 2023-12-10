@@ -53,7 +53,7 @@ Write a short poem or piece of prose alongside this, one for each. Write also ab
     date:"",
 		project:"+",
     name:"Mineral Research",
-		content:`Research Prompt on a particular mined stone or mineral, to share with the class. Gather 2-3 pages of quotes, citations, and 5-10 images. Be prepared to share 1-2 pieces of writing or artwork which engages with your mineral. Where does it come from? Who buys it? What have humans used this for, and for how long? What are its geopolitical dimensions? Be prepared to read this to the class; present your metal/stone to the class in a 5 minute reading that engages at least one other sensory dimension (sound, image… taste if you like… texture)
+		content:`Forage together research on a particular mined stone or mineral, to share with the class. Gather 2-3 pages of quotes, citations, and 5-10 images. Be prepared to share 1-2 pieces of writing or artwork which engages with your mineral. Where does it come from? Who buys it? What have humans used this for, and for how long? What are its geopolitical dimensions? Be prepared to read this to the class; present your metal/stone to the class in a 5 minute reading that engages at least one other sensory dimension (sound, image… taste if you like… texture)
     `
 	},
 	{
@@ -91,7 +91,8 @@ Write a short poem or piece of prose alongside this, one for each. Write also ab
     date:"",
 		project:"+",
     name:"A Long Line",
-		content:`Take a walk within the week. Modify something small in your landscape and document it. Using one continuous line, can you create a map of that walk?`
+		content:`Take a walk within the week. Modify something small in your landscape and document it. Using one continuous line, can you create a map of that walk?
+    <br><br>Inspired by Eleni Sikelianos.`
 	},
   {
 		shown:false,
@@ -103,7 +104,9 @@ Write a short poem or piece of prose alongside this, one for each. Write also ab
     First, you might trace + write only the text as it is. Think: What is missing from the original map? What could be named something else? What should not be represented on this map?
  <br><br>Next, take 1-2 of the names, and using a computer or phone, research the background of that place. Could use Native-Land.ca, or something else. What is it called now, what did it used to be called? When did that change? Have there been any efforts to rename? Take some notes
 Write a short poem about your findings.<br><br>
-Finally, using a second sheet of tracing paper on the original map, rewrite the original text and with your own text. Erase, delete, modify, or respell to create your counter-cartographic poem.`
+Finally, using a second sheet of tracing paper on the original map, rewrite the original text and with your own text. Erase, delete, modify, or respell to create your counter-cartographic poem.
+<br><br>
+Much love and gratitude to Hua Xi for teaching me about spatial poetry.`
       },
 	{
 		shown:false,
