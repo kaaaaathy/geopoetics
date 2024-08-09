@@ -1,25 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+  font-family: Authentic;
+  src: url(authentic-woff/AUTHENTICSans-90.woff);
+}
 
 /*———————————————GLOBAL STYLES———————————————*/
 
 
-body{
+body {
   margin: 20px 0px 40px 40px;
   font-weight: normal;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
 
-  color:#173660;
+  color: #173660;
   background: #e8e7e1;
   letter-spacing: 0.5px;
 
   user-select: none;
 }
 
-.header{
+.header {
   padding: 20px 0px;
   max-width: 720px;
 }
@@ -33,12 +36,12 @@ body{
 }
 
 .row {
-  border:1px solid #173660;
+  border: 1px solid #173660;
   padding: 10px 30px;
   margin: 20px 0;
   transition: all 0.25s ease;
   border-radius: 8px;
-  font-size:16px;
+  font-size: 16px;
   cursor: help;
 
 }
@@ -46,38 +49,38 @@ body{
 
 .row:hover {
   background: #173660;
-  color:#e8e7e1;
+  color: #e8e7e1;
 }
 
-.#173660{
+.#173660 {
   background: #173660;
-  color:#e8e7e1;
+  color: #e8e7e1;
   cursor: default;
 }
 
 
-.#173660 a{
-  color:#e8e7e1;
+.#173660 a {
+  color: #e8e7e1;
   border-bottom: 1px solid #e8e7e1;
 
 
 }
 
-.row a:hover{
-  opacity:0.5;
+.row a:hover {
+  opacity: 0.5;
   transition: 0.2s opacity;
 }
 
 .row:hover a {
-  color:#e8e7e1;
+  color: #e8e7e1;
   border-bottom: 1px solid #e8e7e1;
 }
 
 .row:hover .note {
-  color:#e8e7e1;
+  color: #e8e7e1;
 }
 
-.item{
+.item {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -88,7 +91,7 @@ body{
   font-weight: normal;
   font-family: 'courier prime';
   letter-spacing: 0px;
-  font-size:20px;
+  font-size: 20px;
   padding: 16px 0px;
 }
 
@@ -103,14 +106,14 @@ body{
 .button {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Courier Prime','Courier',monospace;
+  font-family: 'Courier Prime', 'Courier', monospace;
   text-transform: uppercase;
-  background:  #e8e7e1;
+  background: #e8e7e1;
   border: 1px solid #173660;
   border-radius: 20px;
-  padding:4px 8px;
-  color:#173660;
-  right:0px;
+  padding: 4px 8px;
+  color: #173660;
+  right: 0px;
   margin-left: 20px;
   margin-bottom: 8px;
 
@@ -118,34 +121,34 @@ body{
 
 }
 
-.button:hover{
-  background-color:#173660;
-  border: 1px solid  #e8e7e1;
+.button:hover {
+  background-color: #173660;
+  border: 1px solid #e8e7e1;
   color: #e8e7e1;
 
 }
 
 .doc {
-  width:800px;
-  margin:auto;
-  height:900px;
-  border:0px;
+  width: 800px;
+  margin: auto;
+  height: 900px;
+  border: 0px;
   box-shadow: 4px 4px 12px thistle;
 }
 
-.short{
-  height:400px;
+.short {
+  height: 400px;
 }
 
 /* journaling prompt images */
 .p-image {
-    width:auto;
-    max-height: 300px;
-    padding-top:20px;
+  width: auto;
+  max-height: 300px;
+  padding-top: 20px;
 
 }
 
-.schedule img{
+.schedule img {
   filter: grayscale(100%);
 }
 
@@ -153,17 +156,18 @@ body{
 /*———————————————TYPOGRAPHY STYLES———————————————*/
 
 ::selection {
-  background:#222222;
-  color:#173660;
+  background: #222222;
+  color: #173660;
 }
 
-ul, li {
-  padding-left: 0px!important;
+ul,
+li {
+  padding-left: 0px !important;
 }
 
 a {
   text-decoration: none;
-  color:#173660;
+  color: #173660;
   border-bottom: 0.5px solid #173660;
 }
 
@@ -171,6 +175,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+
 h1 {
   font-weight: normal;
   font-size: 32px;
@@ -179,6 +184,7 @@ h1 {
   letter-spacing: 0px;
 
 }
+
 h2 {
   font-weight: normal;
   font-size: 20px;
@@ -186,7 +192,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Courier Prime','Courier',monospace;
+  font-family: 'Courier Prime', 'Courier', monospace;
   font-size: 14px;
   font-weight: normal;
   padding-top: 20px;
@@ -195,7 +201,7 @@ h3 {
 }
 
 .small {
-  font-family: 'courier prime', 'courier',monospace;
+  font-family: 'courier prime', 'courier', monospace;
   font-size: 14px;
 
 }
@@ -203,29 +209,30 @@ h3 {
 /* FONT SPAN styles */
 
 .note {
-  font-family: 'Courier Prime','Courier',monospace;
+  font-family: 'Courier Prime', 'Courier', monospace;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .imageCaption {
-  font-family: 'Courier Prime','Courier',monospace;
+  font-family: 'Courier Prime', 'Courier', monospace;
   font-size: 12px;
-  font-style:italic;
+  font-style: italic;
   max-width: 400px;
 }
 
 #cp {
-  color:#173660;
+  color: #173660;
   border-bottom: 1px solid #173660;
 }
+
 #cp:hover {
-  color:thistle;
+  color: thistle;
   border-bottom: 1px solid thistle;
 
-  opacity:0.9;
+  opacity: 0.9;
   transition: 0.2s all;
-  cursor:help;
+  cursor: help;
 }
 
 /* @media only screen and (max-width: 960px) {
@@ -245,24 +252,27 @@ h3 {
   .row {
     flex-wrap: wrap;
     padding-bottom: 0px;
-    padding-left:20px;
+    padding-left: 20px;
   }
 
   .doc {
-    width:100%;
-  }
-  .p-image {
-      width:100%;
-      max-height: 500px;
-  }
-  .imageCaption {
-    width:100%;
-  }
-
-  .item-heading{
     width: 100%;
   }
-  .contents{
+
+  .p-image {
+    width: 100%;
+    max-height: 500px;
+  }
+
+  .imageCaption {
+    width: 100%;
+  }
+
+  .item-heading {
+    width: 100%;
+  }
+
+  .contents {
     margin-left: 0px;
   }
 
