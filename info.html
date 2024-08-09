@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+</head>
+<body>
+<div class="header">
+  <p class = "small">Brown Literary Arts  •  LIT 311F</p>
+  <p class="small">˚. ✦.˳·˖✶</p>
+  <!-- <h2 style = "padding-top:0px"> -->
+  <h2>Geopoetics is a cross-disciplinary language arts via geologic matter. How might reading, writing, and making with stone extend what Ursula K. LeGuin calls, “the meter of eternity”? How might fossil, tectonic plate, and planet show us new spatial and temporal scales of inscription, elegy, and literary possibility beyond the Anthropocene?    
+</h2>
+<br>
+<!-- <p>Student work →
+  <a class = "button" href="https://www.instagram.com/comppoetics/" target="_blank">Instagram</a>
+  <a class = "button" href="reader/spring21.html" target="_blank">Spring 2021</a>
+  <a class = "button" href="reader/fall21.html" target="_blank">Fall 2021</a></p> -->
+</div>
+
+<div id="container">
+<div class = "row" v-for="(week,index) in weeks">
+    <div class = "item" @click="week.shown = !week.shown">
+      <div class ="item-text">{{index+1}}&nbsp;&nbsp;</div>
+      <div class ="item-heading">{{week.theme}}</div>
+    </div>
+
+    <!-- <div class="caret">X</div> -->
+
+    <!-- hidden content starts here -->
+    <div class = "contents container" v-if="week.shown==true">
+      <div v-html="week.questions"></div>
+      <br>
+      <div v-html="week.img" class="imageCaption"></div>
+      <br>
+      <!-- <h3>
+        In Class</span></h3> -->
+        <!-- This is H3 on purpose!! -->
+      <div v-html="week.inClass"></div>
+
+      <h3>
+        Readings</span></h3>
+      <div v-html="week.reading"></div>
+
+    </div>
+</div>
+
+<!-- end row element -->
+
+</div>
+<p class = "small">Thanks to Clement Valla for the Binder.js template.</p>
+
+
+<script type = "module">
+
+import projects from "./projects.js";
+
+new Vue({
+    el: "#container",
+    data: {
+      shownitem: 0,
+      weeks: [
+            {
+          		shown:false,
+          		theme:`▥ VIBRATIONS (GEO-SOMATICS)`,
+              questions:``,
+              img:`<img src="imgs/yo.png" class="imageCaption"><br>Yoko Ono, Earth Piece`,
+              inClass:
+                `
+                *Before class: *Find a geological object – could be a rock, pebble, small jar of sand, fossil – that you will want to keep with you throughout the semester.*
+                <br><br>
+                Perform/read together:
+                <li> Pauline Oliveros, Earth.
+                <li> CAConrad, Somatic Rituals.
+             
+                `
+                ,
+              reading:`Max Frisch, Man In The Holocene, p. 1–65
+              <br>Ursula K LeGuin, Author of the Acacia Seeds`
+          	},
+          	{
+          		shown:false,
+          		theme:"▣ FOSSILS",
+              questions:``,
+              img:`<img src="imgs/tk.png" class="imageCaption"><br>Tetsumi Kudo, Fossil in Hiroshima`,
+              inClass:`
+              Look at:
+<li>Eunsong Kim, Romance #1
+<li>Inger Christensen, Alphabet
+<li>Ana Mendieta, Traces (see also: Siluetas)
+<li>Tetsumi Kudo Fossil in Hiroshima
+<li>Ingrid Burrington, Networks of New York
+<br><br>
+Do: Write a litany (list poem) and title it, Things Which Will Remain
+`,
+              reading:`
+Max Frisch, Man In The Holocene, p. 66-113 (end)
+<br>Ten Thousand Years - 99% Invisible`
+
+          	},
+            {
+          		shown:false,
+          		theme:"▤ FUTURES (FALLOUT)",
+              questions:``,
+              img:`<img src="imgs/ag.png" class="imageCaption"><br>Arthur Ganson, The Big Bang`,
+              inClass:`Listen:
+Hone Tuwhare “No Ordinary Sun”
+https://www.youtube.com/watch?v=liTrXAVvYhA
+<br>
+<br>
+Look at:
+<li>Arthur Ganson, Gear with Concrete
+<li>Trevor Paglan, The Last Pictures (2012), alongside Voyager Golden Record
+<li>NASA Orbital Debris Program Office: images of satellites around the earth
+<li>Isao Hashimoto - Earthly Observatory - Map of every nuclear explosion`,
+
+              reading:`
+              Jussi Parikka, Geology of Media Ch. 2: An Alternative Deep Time of Media`          	},
+            {
+          		shown:false,
+          		theme:"▨ GEOMEDIA",
+              questions:`
+              `,
+              img:`<img src="imgs/bs.png" class="imageCaption">Blair Simmons, Portrait of the Artist<br>`,
+              inClass:`<li>Marisa Morán Jahn, Mines & Other(s), Snatchural History of Copper
+                <li>Carla Fischer Schwartz, Undeliverables
+                  <li>YoHa, Coal Fired Computer
+                    <li>Fernando Godoy, the Remote Series II: CU
+                      <li>Tantalum Memorial`,
+              reading:`Mark Nowak with Ian Teh, Coal Mountain Elementary`          	},
+
+            {
+          		shown:false,
+          		theme:"□ UNDERGROUNDS",
+              questions:``,
+              img:`<img src="imgs/nf.png" class="imageCaption"><br>Neptune Frost, film by Saul Williams & Anisia Uzeyman`,
+              inClass:`Watch: Neptune Frost, Saul Williams, Anisia Uzeyman (full length film)
+              <br>
+              <br>
+Look at:
+<li>YoHa, Aluminum Project
+<li>iMine game
+<li>OAK FLAT, Lauren Redniss (excerpts)
+<li>Listen/Watch: 
+<li>Dislocation Blues (2017) — Sky Hopinka
+`,
+              reading:`Kathryn Yusoff, A Billion Black Anthropocenes or None, Chapter 4: Insurgent Geology: A Billion Black Anthropocenes Now
+              `
+          	},
+            {
+          		shown:false,
+          		theme:"▣ METAMORPHOSIS",
+              questions:``,
+              img:`<img src="imgs/fm.png" class="imageCaption"><br>Fabrice Montiero, The Prophecy`,
+              inClass:`Look:
+<li>Audre Lorde Coal (In Library of Congress recording, hear her read at timestamp 42:30)
+<li>Crystal World, Jonathan Kemp + Martin Howse
+<li>Fabrice Monteiro, The Prophecy
+<li>Steve McQueen Carib’s Leap / Western Deep
+<br>
+<br>
+See also (bonus materials):
+<li>Black Metamorphosis, Sylvia Wynter
+`,
+              reading:`Laura Moriarty, Personal Volcano`
+          	},
+           
+            {
+          		shown:false,
+          		theme:" ◘ ERUPTION",
+          		due:``,
+              questions:``,
+              img:`<img src="imgs/amv.png" class="imageCaption"><br>Ana Mendieta, Volcan`,
+              inClass:`In class:
+<li>Dyke, Sabrina Imbler (excerpts)
+<li>Bread, Kamau Braithwaite
+<li>Rings of Fire, Carlos Santo Perez
+  <br>
+<br>
+Look:
+<li>Ana Mendieta, Volcán
+  <br>
+<br>
+See also:
+<li>Vanessa Agard-Jones: What the Sands Remember
+<li>Callum Angus, A Natural History of Transition
+<li>Eleni Sikelianos, Your Kingdom, Poem: Volcanoes (National Park)
+`,
+
+              reading:`Imani E. Jackson, From “Flag”, Land Mouth (excerpts)  `          	},
+          
+            {
+          		shown:false,
+          		theme:"◍ EROSION",
+              questions:``,
+              img:`<img src="imgs/cv.png" class="imageCaption"><br>Cecilia Vicuña`,
+              inClass:`
+              Look at:
+<li>Riverbed • Artwork • Studio Olafur Eliasson
+<li>Cecilia Vicuña, River
+<li>Crystallography, Christian Bok
+<br> Do: Document cut-out activity w/ archives on the Seekonk River
+
+`,
+              reading:`Amelia Bloom on Marsh Ruins, Beverly Buchanan`,
+          	},
+            {
+          		shown:false,
+          		theme:"◌ MEMORIAL",
+              questions:``,
+              img:`<img src="imgs/bb.png" class="imageCaption"><br>Marsh Ruins, Beverly Buchanan`,
+              inClass:`
+Watch/Look:
+<li>Ana Mendieta, Siluetas
+<Li>Andy Goldsworthy, small works with leaves and stones
+<li>Gohar Dashti, Land/s
+<li>Raul Zurita, Escritura Material
+<li>Beverly Buchanan, Marsh Ruins, Ruins, Rituals
+<br><br>Do: Collectively, create an ephemeral outdoors artwork with found objects, leaves, dirt, etc.`,
+              reading:`None. Focus on writing a reflection for final project.`
+          	},
+            {
+          		shown:false,
+          		theme:`▦ LAND AESTHETICS`,
+              questions:``,
+              img:`<img src="imgs/am.png" class="imageCaption"><br>Alan Michelson`,
+              inClass:`Look at:
+<li>Alan Michaelson, Earth’s Eye, Mantle
+<li>Megan Cope, Weelam Ngalut (Our Place) / Rematriation / Walangala
+<li>Sky Hopinka, Mnemonics of Shape and Reason
+<li>Carolina Caycedo, Dammed Landscape
+<li>Robert Smithson, Spiral Jetty
+`,
+              reading:`Cecilia Vicuña, About to Happen, p1–74`
+          	},
+            {
+          		shown:false,
+          		theme:`▧ LINES`,
+              questions:``,
+              img:`<img src="imgs/rg.png" class="imageCaption"><br>Renee Gladman, Prose Architectures`,
+              inClass:`Look at:
+<li>Richard Long, A Line Made By Walking
+<li>Cecilia Vicuña's Quipu works
+<li>Nyugen E. Smith, Bundlehouse Borderlands
+<li>Renee Gladman, Prose Architectures
+<br>
+<br>Do: Contour drawings of images from the Cecilia Vicuña book.
+`,
+              reading:`Cecilia Vicuña, About to Happen, p74–end`          	},
+            {
+          		shown:false,
+          		theme:`■ (COUNTER) CARTOGRAPHIES`,
+              questions:``,
+              img:`<img src="imgs/ns.png" class="imageCaption"><br>Nguyen Smith, Bundlehouse Borderlands`,
+              inClass:`Look at:
+<li>Damian Zucconi, Fata Morgana
+<li>David Rumsey Map Collection
+<li>Joaquin Torres-Garcia, Ámerica Invertida
+<li>Native-Land Mapping Project
+<li>Meiko Shiomi Spatial Poem 5
+<li>Queering the Map
+<br>
+<br>Do: Counter-cartography tracing activity on a map of your choice.
+`,
+              reading:`Excerpt from Natural History of Transition (Rock Jenny) `,
+              project:``,
+          	},
+            {
+          		shown:false,
+          		theme:`◉ END`,
+              questions:``,
+              img:`<img src="imgs/ams.png" class="imageCaption"><br>Ana Mendieta, Silueta`,
+              inClass:`Project critiques & short workshops of everyone’s work!
+              <br><br>Look at:
+              <li>Eli Nixon's Bloodtide
+                <br><br>Make group chapbooks together.`,
+              
+              reading:`No reading. Have a great break :)`          	}
+      ]}
+})
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"title": "geopoetics",
+	"about" : "geopoetics",
+	"menu" : {
+		"✻ Geopoetics ✻" : "info.html",
+		"Syllabus" : "https://docs.google.com/document/d/15LGGcaDJQCBGlJa_fClyAkTuxMU2nuVD0OI_e-Hi5b4/edit?usp=sharing",
+		"Projects" : "projects.html",
+		"Topics" : "topics.html",
+		"Class Zine" : "zine.html"
+		}
+}
